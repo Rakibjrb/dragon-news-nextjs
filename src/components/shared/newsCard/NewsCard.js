@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const NewsCard = ({ news, showCategory }) => {
   return (
-    <div className="space-y-4">
+    <Link href={`/news/${news._id}`} className="space-y-4">
       <Image
         className="w-full rounded-xl"
         src={news?.thumbnail_url}
@@ -22,7 +23,7 @@ const NewsCard = ({ news, showCategory }) => {
         {news?.author?.name} - {news?.author?.published_date}
       </h3>
       <p>{news.details.slice(0, 50)} ....</p>
-    </div>
+    </Link>
   );
 };
 

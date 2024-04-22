@@ -6,7 +6,7 @@ const LatestNews = async () => {
 
   return (
     <div className="space-y-8">
-      <h1 className="text-3xl lg:text-4xl font-semibold border-b-red-500 border-b-4 inline-block px-4 pb-2">
+      <h1 className="mb-6 text-3xl lg:text-4xl font-semibold border-b-red-500 border-b-4 inline-block px-4 pb-2">
         Latest News
       </h1>
 
