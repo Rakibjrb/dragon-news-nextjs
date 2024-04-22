@@ -13,6 +13,31 @@ const SideBar = async () => {
       </h1>
 
       <NewsCard news={newses[2]} showCategory={true} />
+      {/* four random newses */}
+      <div className="space-y-4">
+        {newses?.slice(10, 14)?.map((news, index) => (
+          <div
+            key={news + index + "randomNews"}
+            className="flex items-center gap-4"
+          >
+            <div className="w-[140px]">
+              <Image
+                className="w-full rounded-xl"
+                src={news?.thumbnail_url}
+                width={800}
+                height={500}
+                alt={"sidebarbottom image"}
+                priority={true}
+              />
+            </div>
+
+            <div className="space-y-2 flex-1">
+              <h2 className="text-xl font-semibold">{news?.title}</h2>
+              <p>{news?.author?.published_date}</p>
+            </div>
+          </div>
+        ))}
+      </div>
 
       <Image
         className="w-full rounded-xl"

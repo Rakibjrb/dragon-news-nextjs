@@ -4,16 +4,16 @@ const navItems = [
     pathname: "/",
   },
   {
-    route: "pages",
-    pathname: "/pages",
+    route: "news",
+    pathname: "/news",
   },
   {
     route: "category",
     pathname: "/category",
   },
   {
-    route: "news",
-    pathname: "/news",
+    route: "pages",
+    pathname: "/pages",
   },
   {
     route: "about",
