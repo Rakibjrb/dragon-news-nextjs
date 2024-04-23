@@ -9,7 +9,7 @@ const navItems = [
   },
   {
     route: "category",
-    pathname: "/category",
+    pathname: "/category/All",
   },
   {
     route: "pages",
