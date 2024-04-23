@@ -6,8 +6,8 @@ const categories = [
   "All",
   "Technology",
   "Sports",
+  "Entertainment",
   "Culture",
-  "National",
   "Local",
 ];
 
